@@ -1,0 +1,19 @@
+{
+  "name": "mo-masoud/singlewire",
+  "description": "Singlewire PHP SDK",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Mohamed Masoud",
+      "email": "mo-masoud.7007@gmail.com"
+    }
+  ],
+  "require": {
+  },
+  "autoload": {
+    "psr-4": {
+      "MoMasoud\\Singlewire\\": "src/"
+    }
+  }
+}

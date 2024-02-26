@@ -1,7 +1,8 @@
 {
   "name": "mo-masoud/singlewire",
   "description": "Singlewire PHP SDK",
-  "minimum-stability": "stable",
+  "minimum-stability": "dev",
+  "type": "library",
   "license": "MIT",
   "authors": [
     {
@@ -10,10 +11,25 @@
     }
   ],
   "require": {
+    "php": "^8.1",
+    "illuminate/support": "^9.0|^10.0",
+    "illuminate/http": "^9.0|^10.0",
+    "guzzlehttp/guzzle": "^7.8"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^8.18"
   },
   "autoload": {
     "psr-4": {
       "MoMasoud\\Singlewire\\": "src/"
     }
-  }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "MoMasoud\\Singlewire\\SinglewireServiceProvider"
+      ]
+    }
+  },
+  "prefer-stable": true
 }
